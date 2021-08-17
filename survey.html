@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>U KNOW ME</title>
+	<meta name="description" content="Let's see that how much you know me ...">
+	<link rel="shortcut icon" href="/files/ico.png">
+	<style>
+	select{height:4vh;background:white;border-width:0;border-radius:20px;}
+	body{background:#679FE9;}
+	button{border-radius:20px;border:solid;background:white;height:5vh;width:50%;font-size:3vh;}
+	p{font-size:4vh;}
+	input{text-align:center;height:5vh;font-size:3vh;border-radius:20px;border:solid;}
+	</style>
+	<script>
+	function m(){
+		var b = document.getElementsByTagName("input")[0].value;
+		var a= document.getElementsByTagName("form")[0].innerHTML;
+		document.getElementsByTagName("form")[0].innerHTML = a +"<input name='user' value='"+localStorage.getItem("username")+"'>";
+		document.getElementsByTagName("input")[0].value = b;
+		document.getElementsByTagName("form")[0].submit();
+	}
+	</script>
+</head>
+<body>
+<form action="/sur" method="POST">
+<p>Your name<input type="text" name="nameof"></p>
+<br><br>
+<p>Which your favourite animal??
+<select name="df1">
+<option>Wolf</option>
+<option>Fox</option>
+<option>Lion</option>
+</select>
+</p>
+
+<p>What would you like to have with me , when we will meet??
+<select name="df2">
+<option>Coffee</option>
+<option>Tea</option>
+<option>Cold drinks</option>
+</select>
+</p>
+
+<p>What will you check, if I will give my mobile to u??
+<select name="df3">
+<option>Search history</option>
+<option>Whatsapp</option>
+<option>Block list</option>
+<option>Photos</option>
+</select>
+</p>
+
+<p>Define me in one word
+<select name="df4">
+<option>Immature</option>
+<option>Mature</option>
+<option>Straight forward</option>
+<option>Loyal</option>
+<option>Angry</option>
+<option>Handsome</option>
+<option>Cute</option>
+<option>Naughty</option>
+</select>
+</p>
+<p>Where will we go , if we get a chance for trip??
+<select name="df5">
+<option>Mountains</option>
+<option>Beach</option>
+<option>Valley</option>
+<option>Desert</option>
+<option>Historical places</option>
+</select>
+</p>
+<br><br>
+</form>
+<center>
+<button onclick="m()">Send</button>
+</center>
+</body>
+</html>

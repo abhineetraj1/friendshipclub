@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>U KNOW ME</title>
+	<meta name="description" content="Let's see that how much you know me ...">
+	<link rel="shortcut icon" href="/files/ico.png">
+	<style>
+	body{background:#679FE9;}
+	button{border-radius:20px;border:solid;background:white;height:5vh;width:50%;font-size:3vh;}
+	p{text-align:left;font-size:4vh;}
+	input{text-align:center;height:5vh;font-size:3vh;border-radius:20px;border:solid;}
+	</style>
+	<script>
+	</script>
+</head>
+<body>
+<center><p>U KNOW ME</p></center><br>
+<p>Your form has been created.</p>
+<p>Your form will be deleted in 24-48 hrs.</p><br><br>
+<center><p>Share this link</p></center>
+<center>
+	<input value="dfdfdf"><br>
+	<button onclick="cpy()">Copy link</button>
+</center>
+<script>
+function cpy() {document.getElementsByTagName('input')[0].focus();document.getElementsByTagName('input')[0].select();document.execCommand("copy");alert("Your link has been copied. Now you can share it!");}
+</script>
+</body>
+</html>
