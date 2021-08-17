@@ -9,8 +9,8 @@ import smtplib
 app = Flask(__name__, static_folder="files")
 
 def mail(arg1,arg):
-	av=smtplib.SMTP_SSL("smtp.gmail.com",465)
-	av.login("friendship.club.response@gmail.com","friendshipclub@2021")
+	av=smtplib.SMTP_SSL("smtp.domain.com",port)
+	av.login("youremail@domain.com","password")
 	try:
 		av.sendmail("friendship.club.response@gmail.com",arg1,arg)
 		return "Y"
