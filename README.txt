@@ -8,4 +8,4 @@ For windows :-
 2) open command prompt and enter  - "pip install flask"
 3) Create a mail account and disable  - less secure app option in mail service
 4) In app.py From line 11 , just clarify your smtp domain , smtp port , and your credentials in the place of yourmail@domain.com and smtp.yourdomain.com
-5) Finally execute the file and enjoy my project.
+5) Finally execute the file app.py and enjoy my project.
