@@ -12,7 +12,7 @@ def mail(arg1,arg):
 	av=smtplib.SMTP_SSL("smtp.domain.com",port)
 	av.login("youremail@domain.com","password")
 	try:
-		av.sendmail("friendship.club.response@gmail.com",arg1,arg)
+		av.sendmail("yourmail@domain.com",arg1,arg)
 		return "Y"
 	except:
 		return "X"
