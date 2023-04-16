@@ -16,7 +16,7 @@
 	function m(){
 		var b = document.getElementsByTagName("input")[0].value;
 		var a= document.getElementsByTagName("form")[0].innerHTML;
-		document.getElementsByTagName("form")[0].innerHTML = a +"<input name='user' value='"+localStorage.getItem("username")+"'>";
+		document.getElementsByTagName("form")[0].innerHTML = a +"<input name='user' value='{{username}}'>";
 		document.getElementsByTagName("input")[0].value = b;
 		document.getElementsByTagName("form")[0].submit();
 	}
