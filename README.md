@@ -1,4 +1,4 @@
-# Flask registration form
+# Flask friendship survey site
 Build simple web registration and login in python using Flask framework.
 
 Made in python3.6 (using Flask lib)
