@@ -7,22 +7,33 @@
 	<link rel="shortcut icon" href="/files/ico.png">
 	<style>
 	body{background:#679FE9;}
-	button{border-radius:20px;border:solid;background:white;height:5vh;width:50%;font-size:3vh;}
-	p{text-align:left;font-size:4vh;}
-	input{text-align:center;height:5vh;font-size:3vh;border-radius:20px;border:solid;}
+	button{border-radius:8px;border:solid;background:white;font-size:20px;padding: 3px;margin: 5px}
+	p{text-align:left;font-size:20px;}
+	input{text-align:center;height:23px;font-size:18px;border-radius:23px;border:solid;}
+	#fg{
+		width: 100%;
+		font-size: 20px;
+		text-align: center;
+		padding: 3px;
+	}
+	#f{
+		text-align: center;
+		font-size: 30px;
+	}
 	</style>
 	<script>
 	</script>
 </head>
 <body>
-<center><p>U KNOW ME</p></center><br>
+<p id="f"p>U KNOW ME</p><br>
 <p>Your form has been created.</p>
 <p>Your form will be deleted in 24-48 hrs.</p><br><br>
-<center><p>Share this link</p></center>
-<center>
+<div id="fg">
+	<br>
+	Share this link<br>
 	<input value="{{dfdfdf}}"><br>
 	<button onclick="cpy()">Copy link</button>
-</center>
+</div>
 <script>
 function cpy() {document.getElementsByTagName('input')[0].focus();document.getElementsByTagName('input')[0].select();document.execCommand("copy");alert("Your link has been copied. Now you can share it!");}
 </script>

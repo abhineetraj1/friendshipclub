@@ -7,10 +7,14 @@
 	<meta name="viewport" content="width=device width, user-scalable=no">
 	<style>
 	body{background:#679FE9;}
-	button{border-radius:20px;border:solid;background:white;height:5vh;width:50%;font-size:3vh;}
+	form{
+		text-align: center;
+		width: 100%;
+	}
+	button{border-radius:8px;border:solid;background:white;font-size:20px;padding: 3px;margin: 3px;}
 	p{text-align:center;font-size:4vh;}
-	input{text-align:center;height:5vh;font-size:3vh;border-radius:20px;border:solid;}
-	#f{border-width:0;background:#679FE9;color:#679FE9;}
+	input{text-align:center;font-size:20px;border-radius:8px;border:solid;}
+	#f{border-width:0px;background:#679FE9;color:#679FE9;}
 	</style>
 	<script>
 	</script>
@@ -19,7 +23,8 @@
 <br><br>
 <center>
 <form action="/otp" method="POST">
-<p>Enter OTP (Sent to your given email ID)</p><br>
+<p>Enter OTP (Sent to your given email ID)</p>
+<br>
 <input type="text" name="otp">
 <input type="text" name="name" id="f" value="{{fcontent}}" readonly>
 <br>
